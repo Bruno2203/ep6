@@ -1,4 +1,4 @@
-const previousOperationsText = document.querySelector("#prvious-operation")
+const previousOperationsText = document.querySelector("#previous-operation")
 const currentOperationsText = document.querySelector("#current-operation")
 const button = document.querySelectorAll("#button_conteiner button")
 
