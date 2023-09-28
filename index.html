@@ -6,15 +6,26 @@
     <title>Document</title>
 </head>
 <body>
-    <form>
-        <h1>pergunta?</h1>
-        <input type="radio" name="resposta" value="errada">1 <br>
-        <input type="radio" name="resposta" value="errada">2 <br>
-        <input type="radio" name="resposta" value="certa">3 <br>
-        <input type="radio" name="resposta" value="errada">4 <br>
-        <button type="button" onclick="focaoresposta()">enviar</button>
-            <p id="retorno"></p>
-    <form>
+    <form<form name="meuForm" method="post" id="formulario">
+        <div class="perguntas">
+            <h1>Perguntas</h1>
+            <label>
+                <span>pergunta1</span>
+                <input type="text" class="respostatxt" name="resposta" id="resposta1">
+            </label><br>
+            <br>
+            <label>
+                <span>pergunta2</span>
+                <input type="text" class="respostatxt" name="resposta" id="resposta2">
+            </label><br>
+            <br>
+            <label>
+                <span>pergunta3</span>
+                <input type="text" class="respostatxt" name="resposta" id="resposta3">
+            </label>
+
+            <button type="button" onclick="coferir()">Resultado</button>
+        </div>
+    </form>
 </body>
-<script src="hfvs.js"></script>
 </html>
