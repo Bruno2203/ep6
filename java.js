@@ -1,5 +1,6 @@
 function funcaoresposta(){
-    var respostaCorreta = "correta";
-    var respostaUsario = document.querySelector('input[name="resposta"]:checked');
-    alert(respostaUsario); 
+    var respostaUsario = document.querySelector('input[name="respota"]:checked').value;
+    if(respostaUsario.value == "correta"){
+        document.getElementById("retorno").textContent = "acertou";
+    }
 }
