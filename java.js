@@ -1,9 +1,5 @@
-function fucaorespota(){
+function funcaoresposta(){
     var respostaCorreta = "correta";
-    var respostaUsario = document.querySelector('input[name="resposta"]:checked')
-    if(respostaUsario){
-        if(respostaUsario.value ===respostaCorreta){
-            
-        }
-    }
+    var respostaUsario = document.querySelector('input[name="resposta"]:checked');
+    alert(respostaUsario); 
 }
