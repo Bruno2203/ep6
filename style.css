@@ -1,13 +1,34 @@
 body{
+    grid-gap: 20px; ;
+    display: grid;
+    grid-template-areas:
+    "cabe"
+    "meio"
+    "lado"
+    "roda";
+}
+.under {
+    text-decoration: underline;
+  }  
+  .under2 {
+    text-decoration: underline;
+    text-align: center;
+  }  
+.fundofrase{
+    background-color: white;
 
 }
 .cabe{
+    grid-area: cabe;
     background-color: rgb(54, 100, 130);
 }
 .name{
-position: absolute;
-left: 6%;
-top: 8px;
+    position: absolute;
+    left: 6%;
+    top: 8px;
+}
+.meio{
+    grid-area: meio;
 }
 .logo{
     margin: 10px;
@@ -16,12 +37,48 @@ top: 8px;
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 10px;
-    border: black 2px solid;
+    border: rgb(29, 53, 109) 5px solid;
+    border-radius: 15px;
     word-break: normal;
     font-family: Arial, Helvetica, sans-serif;
     padding: 20px;
-
+    background-color: rgb(127, 165, 255);
 }
 .centraliza{
     text-align: center;
 }
+.lado{
+    grid-area: lado;
+    background-image: url(img/fundo.jpg);
+    height: 77vh;
+    border: 3px black solid;
+    border-radius: 7px;
+}
+.roda{
+    grid-area: roda;
+}
+.partefundo{
+    justify-content: center;
+    text-align: center;
+    height: 50vh;
+    position: relative;
+    top: 200px;
+}
+.butao{
+    background-color: rgba(0, 0, 0, 0.868);
+    border: 3px black solid;
+    border-radius: 7px;
+    height: 60px;
+    width: 100px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
