@@ -1,12 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    ainda nao tem nada!
-    kkkskskskkssssksk
+    <header class="cabe">
+        <img src="img/logo.png" class="logo">
+        <h1 class="name">Cinematica</h1>
+    </header>
+    <main class="meio">
+        <h1>calculo de soma:</h1>
+        valor1: <input type="text" id="arara1" value="0"><br>
+        valor2: <input type="text" id="arara2" value="0"><br>
+        <input type="button" value="somar" onclick="josefa()"><br>
+        <input type="button" value="diminuir" onclick="diminuir()"><br>
+        <input type="button" value="multiplicacao" onclick="multiplicacao()"><br>
+        <input type="button" value="dividir" onclick="divisao()"><br>
+        resultado: <input type="text" id="fernanda" value="0">
+<script>
+    function josefa(){
+        fernanda.value = parseInt(arara1.value) + parseInt(arara2.value);
+    }
+    function diminuir(){
+        fernanda.value = parseInt(arara1.value) - parseInt(arara2.value);
+    }
+    function multiplicacao(){
+        fernanda.value = parseInt(arara1.value) * parseInt(arara2.value);
+    }
+    function divisao(){
+        if(arara2.value ==0){
+            alert("nao pode dividir por zero");
+            arara1.value = 0;
+        }
+        else {
+            fernanda.value = parseInt(arara1.value) / parseInt(arara2.value);
+        }
+    }
+</script>
+    </main>
+    <footer class="roda">
+
+    </footer>
 </body>
 </html>

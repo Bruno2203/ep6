@@ -1,6 +1,19 @@
-function funcaoresposta(){
-    var respostaUsario = document.querySelector('input[name="respota"]:checked').value;
-    if(respostaUsario.value == "correta"){
-        document.getElementById("retorno").textContent = "acertou";
+function equacao(){
+    var a = vara.value;
+    var b = varb.value;
+    var c = varc.value;
+
+    var resposta = a/b;
+     
+    if(a == 0){
+        alert("A deve ser diferente de 0");
     }
+    else{
+        if(c == resposta){
+            alert("acertou");
+        }
+        else{
+            alert("errou");
+        }
+}
 }
