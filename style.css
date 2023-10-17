@@ -2,10 +2,10 @@ body{
     grid-gap: 20px; ;
     display: grid;
     grid-template-areas:
-    "cabe"
-    "meio"
-    "lado"
-    "roda";
+    "cabe cabe"
+    "lado meio"
+    "roda roda";
+    background-color: black;
 }
 .under {
     text-decoration: underline;
@@ -20,7 +20,7 @@ body{
 }
 .cabe{
     grid-area: cabe;
-    background-color: rgb(54, 100, 130);
+    background-color: rgb(255, 255, 255);
 }
 .name{
     position: absolute;
@@ -34,23 +34,19 @@ body{
     margin: 10px;
 }
 .centro{
-    margin-left: 10%;
-    margin-right: 10%;
     margin-top: 10px;
-    border: rgb(29, 53, 109) 5px solid;
+    border: rgb(0, 0, 0) 5px solid;
     border-radius: 15px;
     word-break: normal;
     font-family: Arial, Helvetica, sans-serif;
     padding: 20px;
-    background-color: rgb(127, 165, 255);
+    background-color: rgb(156, 148, 148);
 }
 .centraliza{
     text-align: center;
 }
 .lado{
     grid-area: lado;
-    background-image: url(img/fundo.jpg);
-    height: 77vh;
     border: 3px black solid;
     border-radius: 7px;
 }
@@ -65,12 +61,15 @@ body{
     top: 200px;
 }
 .butao{
-    background-color: rgba(0, 0, 0, 0.868);
+    background-color: rgba(199, 199, 199, 0.868);
     border: 3px black solid;
     border-radius: 7px;
     height: 60px;
     width: 100px;
     color: white;
+}
+.enter{
+    background-image: url(img/fundo.jpg);
 }
 
 
