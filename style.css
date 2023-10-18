@@ -5,7 +5,7 @@ body{
     "cabe cabe"
     "lado meio"
     "roda roda";
-    background-color: black;
+    background-color: rgb(255, 255, 255);
 }
 .under {
     text-decoration: underline;
@@ -56,7 +56,7 @@ body{
 .partefundo{
     justify-content: center;
     text-align: center;
-    height: 50vh;
+    height: 55vh;
     position: relative;
     top: 200px;
 }
