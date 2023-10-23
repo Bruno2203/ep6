@@ -2,19 +2,19 @@
     grid-gap: 20px; ;
     display: grid;
     grid-template-areas:
-    "cabe cabe"
-    "lado meio"
-    "roda roda";
-    background-color: rgb(255, 255, 255);
+    "cabe cabe cabe"
+    "lado meio meio"
+    "roda roda roda";
+
 }
-.body_exercicio{
+body{
     grid-gap: 20px; ;
     display: grid;
     grid-template-areas:
     "cabe cabe"
     "meio meio"
     "roda roda";
-    background-color: rgb(255, 255, 255);
+    background: rgb(48, 47, 47);
 }
 .under {
     text-decoration: underline;
@@ -30,11 +30,16 @@
 .cabe{
     grid-area: cabe;
     background-color: rgb(255, 255, 255);
+    height: 100px;
+}
+.lado{
+    grid-area: lado;
+    position: relative;
 }
 .name{
-    position: absolute;
-    left: 6%;
-    top: 8px;
+    position: relative;
+    left: 9%;
+    top: -80px;
 }
 .meio{
     grid-area: meio;
@@ -68,8 +73,9 @@
 }
 .lado{
     grid-area: lado;
-    border: 3px black solid;
+    border: 5px black solid;
     border-radius: 7px;
+    margin-top: 10px;
 }
 .roda{
     grid-area: roda;
@@ -91,6 +97,8 @@
 }
 .enter{
     background-image: url(img/fundo.jpg);
+    padding: 0;
+    margin: 0;
 }
 .buton{
     background-color: rgba(98, 49, 144, 0.844);
@@ -100,8 +108,10 @@
     width: 100px;
     border-radius: 5px;
 }
+footer{
+    width: 100%;
+}
 .footer-diagonal {
-
     width: 100%;
     float: left;
     overflow: hidden;
@@ -201,7 +211,16 @@
   .colfooter:nth-of-type(3n+0) { margin-right:0; border-right:0;}
 
 }
-
+@media (min-width: 380px) {
+    .body_1{
+        grid-gap: 20px; ;
+        display: grid;
+        grid-template-areas:
+        "cabe cabe"
+        "lado meio"
+        "roda roda";
+    } 
+}
 
 
 

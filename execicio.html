@@ -103,6 +103,64 @@
                 <br>
                 <br>
             </form>
+            <script type="text/javascript">
+                function josefa(){
+                    fernanda.value = parseInt(arara1.value) + parseInt(arara2.value);
+                }
+                function diminuir(){
+                    fernanda.value = parseInt(arara1.value) - parseInt(arara2.value);
+                }
+                function multiplicacao(){
+                    fernanda.value = parseInt(arara1.value) * parseInt(arara2.value);
+                }
+                function divisao(){
+                    if(arara2.value ==0){
+                        alert("nao pode dividir por zero");
+                        arara1.value = 0;
+                    }
+                    else {
+                        fernanda.value = parseInt(arara1.value) / parseInt(arara2.value);
+                    }
+                }
+        
+            </script>
+            <h1>calculo de soma:</h1>
+            <br>
+            <h3>Um carro viaja de uma cidade para outra, percorrendo uma distância de 300 quilômetros em 4 horas. Qual é a velocidade média do carro?</h3>
+            <br>
+            valor1: <input type="text" id="arara1" value="0"><br>
+            valor2: <input type="text" id="arara2" value="0"><br>
+            <input type="button" value="somar" onclick="josefa()"><br>
+            <input type="button" value="diminuir" onclick="diminuir()"><br>
+            <input type="button" value="multiplicacao" onclick="multiplicacao()"><br>
+            <input type="button" value="dividir" onclick="divisao()"><br>
+            resultado: <input type="text" id="fernanda" value="0">
+            <br>
+            <br>
+
+            <form>
+                <h3>Um ciclista faz um passeio de bicicleta e cobre uma distância de 20 quilômetros em 1,5 horas. Qual é a sua velocidade média?</h3>
+                <script src="script.js"></script>
+                ache a raiz<br>
+                a= <input type="text" id="vara" value="0"><br>
+                b= <input type="text" id="varb" value="0"><br>
+                <br>
+                c= <input type="text" id="varc" value="0"><br>
+                <button type="button" onclick="equacao()">calcular</button>
+            </form>
+            <br>
+            <br>
+
+            <form>
+                <h3>Um trem parte de uma estação e viaja a uma velocidade constante de 120 km/h por 2,5 horas. Qual é a distância total percorrida pelo trem durante esse tempo?</h3>
+                <script src="script.js"></script>
+                ache a raiz<br>
+                a= <input type="text" id="vara" value="0"><br>
+                b= <input type="text" id="varb" value="0"><br>
+                <br>
+                c= <input type="text" id="varc" value="0"><br>
+                <button type="button" onclick="equacao()">calcular</button>
+            </form>
         </div>
     </main>
     <footer class="main_footer container">        
