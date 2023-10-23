@@ -20,7 +20,7 @@ function equacao(){
 function inclui_nome() {
     var nome_variavel = prompt("Coloque seu nome:");
     if(nome_variavel){
-        document.getElementById("marcacao_nome").innerHTML = nome_variavel;
+        document.getElementById("marcacao_nome").innerHTML = "Olá, " + nome_variavel + ", seja vem vindo! ";
     }
     else{
         alert("Nome não atribuido, preencha o nome.");
