@@ -37,8 +37,7 @@ body{
     position: relative;
 }
 .name{
-    position: relative;
-    left: 9%;
+    position: absolute;
     top: -80px;
 }
 .meio{
@@ -211,16 +210,24 @@ footer{
   .colfooter:nth-of-type(3n+0) { margin-right:0; border-right:0;}
 
 }
-@media (min-width: 380px) {
-    .body_1{
+@media only screen and   (max-width: 380px) {
+    body{
         grid-gap: 20px; ;
         display: grid;
+        background-color: aqua  ;
         grid-template-areas:
         "cabe cabe"
-        "lado meio"
+        "meio meio"
         "roda roda";
-    } 
+    }
+    .name{
+        position: relative;
+        left: 50%;
+        top: -80px;
+    }
+
 }
+
 
 
 
