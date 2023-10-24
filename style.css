@@ -3,7 +3,7 @@
     display: grid;
     grid-template-areas:
     "cabe cabe cabe"
-    "lado meio meio"
+    "meio meio meio"
     "roda roda roda";
 
 }
@@ -38,7 +38,8 @@ body{
 }
 .name{
     position: absolute;
-    top: -80px;
+    top: 10px;
+    left: 100px;
 }
 .meio{
     grid-area: meio;
@@ -106,9 +107,6 @@ body{
     height: 45px;
     width: 100px;
     border-radius: 5px;
-}
-footer{
-    width: 100%;
 }
 .footer-diagonal {
     width: 100%;
@@ -210,11 +208,19 @@ footer{
   .colfooter:nth-of-type(3n+0) { margin-right:0; border-right:0;}
 
 }
-@media only screen and   (max-width: 380px) {
+.verde{
+    color: green;
+    background-color: rgba(0, 128, 0, 0.611);
+}
+.vermelho{
+    color: red;
+    background-color: rgba(234, 11, 11, 0.551);
+}
+@media only screen and   (max-width: 768px) {
     body{
         grid-gap: 20px; ;
         display: grid;
-        background-color: aqua  ;
+        background-color: rgb(48, 47, 47);
         grid-template-areas:
         "cabe cabe"
         "meio meio"
@@ -224,6 +230,60 @@ footer{
         position: relative;
         left: 50%;
         top: -80px;
+    }
+    .centro_2{
+        margin-top: 10px;
+        margin-left: 50px;
+        margin-right: 50px;
+        border: rgb(0, 0, 0) 5px solid;
+        border-radius: 15px;
+        word-break: normal;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-left: 0;
+        padding: 30px;
+        background-color: rgb(156, 148, 148);
+    }
+    .enter{
+        background-color: rgb(48, 47, 47);
+        padding: 0;
+        margin: 0;
+    }
+    .meio{
+        grid-area: meio;
+
+    }
+
+}
+@media only screen and   (min-width: 768px) {
+    body{
+        grid-gap: 20px; ;
+        display: grid;
+        background-color: rgb(48, 47, 47);
+        grid-template-areas:
+        "cabe cabe"
+        "meio meio"
+        "roda roda";
+    }
+    .name{
+        position: relative;
+        left: 50%;
+        top: -80px;
+    }
+    .centro_2{
+        margin-top: 10px;
+        margin-left: 50px;
+        margin-right: 50px;
+        border: rgb(0, 0, 0) 5px solid;
+        border-radius: 15px;
+        word-break: normal;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-left: 150px;
+        padding: 30px;
+        background-color: rgb(156, 148, 148);
+    }
+    .meio{
+        grid-area: meio;
+
     }
 
 }
