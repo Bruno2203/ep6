@@ -1,3 +1,4 @@
+/*faz o grid da pag inicial*/
 .body_1{
     grid-gap: 20px; ;
     display: grid;
@@ -5,8 +6,8 @@
     "cabe cabe cabe"
     "meio meio meio"
     "roda roda roda";
-
 }
+/* faz o grid da pag de perguntas e muda a cor de fundo*/
 body{
     grid-gap: 20px; ;
     display: grid;
@@ -16,6 +17,7 @@ body{
     "roda roda";
     background: rgb(48, 47, 47);
 }
+/*muda a decoraçao das letras dos subtitulos*/
 .under {
     text-decoration: underline;
   }  
@@ -23,30 +25,28 @@ body{
     text-decoration: underline;
     text-align: center;
   }  
+/*coloca a acor braco como fundo da frase*/
 .fundofrase{
     background-color: white;
 
 }
+/*muda a altura do height*/
 .cabe{
     grid-area: cabe;
     background-color: rgb(255, 255, 255);
     height: 100px;
 }
-.lado{
-    grid-area: lado;
-    position: relative;
-}
+/*move o come alo lado da logo*/
 .name{
     position: absolute;
     top: 10px;
     left: 100px;
 }
-.meio{
-    grid-area: meio;
-}
+/*posiciona a logo*/
 .logo{
     margin: 10px;
 }
+/* configura design no centro do main*/ 
 .centro{
     margin-top: 10px;
     border: rgb(0, 0, 0) 5px solid;
@@ -56,6 +56,7 @@ body{
     padding: 20px;
     background-color: rgb(156, 148, 148);
 }
+/*configura design no centro do main*/
 .centro_2{
     margin-top: 10px;
     margin-left: 50px;
@@ -68,18 +69,11 @@ body{
     padding-top: 30px;
     background-color: rgb(156, 148, 148);
 }
+/*coloca no centro*/
 .centraliza{
     text-align: center;
 }
-.lado{
-    grid-area: lado;
-    border: 5px black solid;
-    border-radius: 7px;
-    margin-top: 10px;
-}
-.roda{
-    grid-area: roda;
-}
+/*configura design do fundo do main*/
 .partefundo{
     justify-content: center;
     text-align: center;
@@ -87,6 +81,7 @@ body{
     position: relative;
     top: 200px;
 }
+/*design de button*/
 .butao{
     background-color: rgba(199, 199, 199, 0.868);
     border: 3px black solid;
@@ -95,11 +90,13 @@ body{
     width: 100px;
     color: white;
 }
+/*designer para botao de entrar nos exercicios*/
 .enter{
     background-image: url(img/fundo.jpg);
     padding: 0;
     margin: 0;
 }
+/*configura o botão*/
 .buton{
     background-color: rgba(98, 49, 144, 0.844);
     border: 3px rgb(98, 49, 144);
@@ -108,6 +105,7 @@ body{
     width: 100px;
     border-radius: 5px;
 }
+/*designer do foother*/
 .footer-diagonal {
     width: 100%;
     float: left;
@@ -208,14 +206,23 @@ body{
   .colfooter:nth-of-type(3n+0) { margin-right:0; border-right:0;}
 
 }
+/*muda cores da letra ao responder com certo ou errado*/
 .verde{
     color: green;
-    background-color: rgba(0, 128, 0, 0.611);
 }
 .vermelho{
-    color: red;
-    background-color: rgba(234, 11, 11, 0.551);
+    color: rgb(255, 0, 0);
 }
+.acerto{
+    color: green;
+}
+.erro{
+    color: red;
+}
+.deitar{
+    display: flex;
+}
+/*responsividade*/
 @media only screen and   (max-width: 768px) {
     body{
         grid-gap: 20px; ;
@@ -266,7 +273,7 @@ body{
     }
     .name{
         position: relative;
-        left: 50%;
+        left: 45%;
         top: -80px;
     }
     .centro_2{

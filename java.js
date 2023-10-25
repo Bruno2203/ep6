@@ -1,3 +1,4 @@
+/**faz a dizer se a divisão esta certa ou errada **/
 function equacao(){
     var a = var_a.value;
     var b = var_b.value;
@@ -11,13 +12,14 @@ function equacao(){
     else
     {
         if(c == resposta){
-            alert("acertou");
+            document.getElementById("acerto").innerHTML = "Acerto";     
         }
         else{
-            alert("errou");
+            document.getElementById("erro").innerHTML = "Erro, pois os numeros divididos nao batem de acordo com o valor" 
         }
     }
 }
+/**faz o nome que vc coloca no inicio aparecer na pagina**/
 function inclui_nome() {
     var nome_variavel = prompt("Coloque seu nome:");
     if(nome_variavel){
@@ -28,7 +30,7 @@ function inclui_nome() {
         inclui_nome();
     }
 }
-
+/** corrigi as questões de alternativa**/
 function funcao_resposta(){
 
    
@@ -52,15 +54,14 @@ function funcao_resposta(){
             contador = contador + 1;
         }
         else{
-            document.getElementById("resp_errada_1").innerHTML = "Errada, pois a soma dos quadrados dos catetos é igual ao quadrada da hipotenusa!";
-
+            document.getElementById("resp_errada_1").innerHTML = "Errada, A velocidade média é calculada dividindo o deslocamento pela variação de tempo. Neste caso.";
         }
         if(resp2.value == "correta"){
             document.getElementById("resp_correta_2").innerHTML = "Correta!";
             contador = contador + 1;
         }
         else{
-            document.getElementById("resp_errada_2").innerHTML = "Errada, pois a soma dos quadrados dos catetos é igual ao quadrada da hipotenusa!";
+            document.getElementById("resp_errada_2").innerHTML = "Errada,  A velocidade média é calculada dividindo o deslocamento pela variação de tempo. Neste caso.";
 
         }
         if(resp3.value == "correta"){
@@ -68,7 +69,7 @@ function funcao_resposta(){
             contador = contador + 1;
         }
         else{
-            document.getElementById("resp_errada_3").innerHTML = "Errada, pois a soma dos quadrados dos catetos é igual ao quadrada da hipotenusa!";
+            document.getElementById("resp_errada_3").innerHTML = "Errada,  A velocidade média é calculada dividindo o deslocamento pela variação de tempo. Neste caso.";
 
         }
         if(resp4.value == "correta"){
@@ -76,7 +77,7 @@ function funcao_resposta(){
             contador = contador + 1;
         }
         else{
-            document.getElementById("resp_errada_4").innerHTML = "Errada, pois a soma dos quadrados dos catetos é igual ao quadrada da hipotenusa!";
+            document.getElementById("resp_errada_4").innerHTML = "Errada,  A velocidade média é calculada dividindo o deslocamento pela variação de tempo. Neste caso.";
 
         }
         if(resp5.value == "correta"){
@@ -84,7 +85,7 @@ function funcao_resposta(){
             contador = contador + 1;
         }
         else{
-            document.getElementById("resp_errada_5").innerHTML = "Errada, pois a soma dos quadrados dos catetos é igual ao quadrada da hipotenusa!";
+            document.getElementById("resp_errada_5").innerHTML = "Errada,  A velocidade média é calculada dividindo o deslocamento pela variação de tempo. Neste caso.";
 
         }
         if(resp6.value == "correta"){
@@ -92,7 +93,7 @@ function funcao_resposta(){
             contador = contador + 1;
         }
         else{
-            document.getElementById("resp_errada_6").innerHTML = "Errada, pois a soma dos quadrados dos catetos é igual ao quadrada da hipotenusa!";
+            document.getElementById("resp_errada_6").innerHTML = "Errada,  A velocidade média é calculada dividindo o deslocamento pela variação de tempo. Neste caso.";
 
         }
         if(resp7.value == "correta"){
@@ -100,7 +101,7 @@ function funcao_resposta(){
             contador = contador + 1;
         }
         else{
-            document.getElementById("resp_errada_7").innerHTML = "Errada, pois a soma dos quadrados dos catetos é igual ao quadrada da hipotenusa!";
+            document.getElementById("resp_errada_7").innerHTML = "Errada,  A velocidade média é calculada dividindo o deslocamento pela variação de tempo. Neste caso";
 
         }
         if(resp8.value == "correta"){
@@ -108,7 +109,7 @@ function funcao_resposta(){
             contador = contador + 1;
         }
         else{
-            document.getElementById("resp_errada_8").innerHTML = "Errada, pois a soma dos quadrados dos catetos é igual ao quadrada da hipotenusa!";
+            document.getElementById("resp_errada_8").innerHTML = "Errada,  A velocidade média é calculada dividindo o deslocamento pela variação de tempo. Neste caso";
 
         }
         if(resp9.value == "correta"){
@@ -116,15 +117,14 @@ function funcao_resposta(){
             contador = contador + 1;
         }
         else{
-            document.getElementById("resp_errada_9").innerHTML = "Errada, pois a soma dos quadrados dos catetos é igual ao quadrada da hipotenusa!";
-
+            document.getElementById("resp_errada_9").innerHTML = "Errada,  A velocidade média é calculada dividindo o deslocamento pela variação de tempo. Neste caso.";
         }
         if(resp10.value == "correta"){
             document.getElementById("resp_correta_10").innerHTML = "Correta!";
             contador = contador + 1;
         }
         else{
-            document.getElementById("resp_errada_10").innerHTML = "Errada, pois a soma dos quadrados dos catetos é igual ao quadrada da hipotenusa!";
+            document.getElementById("resp_errada_10").innerHTML = "Errada,  A velocidade média é calculada dividindo o deslocamento pela variação de tempo. Neste caso";
 
         }
         document.getElementById("quantos_acertos").innerHTML = "Você acertou " + contador + " questões!";

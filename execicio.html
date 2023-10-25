@@ -105,22 +105,23 @@
             </form>
             <script type="text/javascript">
                 function josefa(){
-                    fernanda.value = parseInt(arara1.value) + parseInt(arara2.value);
+                    dividi.value = parseInt(valo1.value) + parseInt(valo2.value);
                 }
                 function diminuir(){
-                    fernanda.value = parseInt(arara1.value) - parseInt(arara2.value);
+                    dividi.value = parseInt(valo1.value) - parseInt(valo2.value);
                 }
                 function multiplicacao(){
-                    fernanda.value = parseInt(arara1.value) * parseInt(arara2.value);
+                    dividi.value = parseInt(valo1.value) * parseInt(valo2.value);
                 }
                 function divisao(){
-                    if(arara2.value ==0){
+                    if(valo2.value ==0){
                         alert("nao pode dividir por zero");
                         arara1.value = 0;
                     }
                     else {
-                        fernanda.value = parseInt(arara1.value) / parseInt(arara2.value);
+                        dividi.value = parseInt(valo1.value) / parseInt(valo2.value);
                     }
+                    
                 }
         
             </script>
@@ -128,26 +129,34 @@
             <br>
             <h3>Um carro viaja de uma cidade para outra, percorrendo uma distância de 300 quilômetros em 4 horas. Qual é a velocidade média do carro?</h3>
             <br>
-            valor1: <input type="text" id="arara1" value="0"><br>
-            valor2: <input type="text" id="arara2" value="0"><br>
-            <input type="button" value="somar" onclick="josefa()"><br>
-            <input type="button" value="diminuir" onclick="diminuir()"><br>
-            <input type="button" value="multiplicacao" onclick="multiplicacao()"><br>
-            <input type="button" value="dividir" onclick="divisao()"><br>
-            resultado: <input type="text" id="fernanda" value="0">
+            valor1: <input type="text" id="valo1" value="300"><br>
+            valor2: <input type="text" id="valo2" value="4"><br>
+            <br>
+            <div class="deitar">
+                <input type="button" value="somar" onclick="josefa()"><br>
+                <input type="button" value="diminuir" onclick="diminuir()"><br>
+                <input type="button" value="multiplicacao" onclick="multiplicacao()"><br>
+                <input type="button" value="dividir" onclick="divisao()"><br>
+            </div>
+            <br>
+            resultado: <input type="text" id="dividi" value="0">
             <br>
             <br>
-
             <form>
                 <h3>Um ciclista faz um passeio de bicicleta e cobre uma distância de 20 quilômetros em 1,5 horas. Qual é a sua velocidade média?</h3>
                 <script src="script.js"></script>
                 
-                a= <input type="text" id="var_a" value="0"><br>
-                b= <input type="text" id="var_b" value="0"><br>
+                <input type="text" id="var_a" value="0">
                 <br>
-                c= <input type="text" id="var_c" value="0"><br>
-                <button type="button" onclick="equacao()">calcular</button>
+               <img src="img/dividi.png" height="25px" width="25px">   
+                <br>
+                <input type="text" id="var_b" value="0"><br>
+                <br>
+                resultado= <input type="text" id="var_c" value="0"><br>
+                <br>
+                <button type="button" class="buton" onclick="equacao()">calcular</button>
             </form>
+            <p id="acerto" class="acerto"></p><p id="erro" class="erro"></p>
             <br>
             <br>
 
@@ -155,11 +164,15 @@
                 <h3>Um trem parte de uma estação e viaja a uma velocidade constante de 120 km/h por 2,5 horas. Qual é a distância total percorrida pelo trem durante esse tempo?</h3>
                 <script src="script.js"></script>
                
-                a= <input type="text" id="vara" value="0"><br>
-                b= <input type="text" id="varb" value="0"><br>
+                <input type="text" id="var_a" value="0">
                 <br>
-                c= <input type="text" id="varc" value="0"><br>
-                <button type="button" onclick="equacao()">calcular</button>
+               <img src="img/dividi.png" height="25px" width="25px">   
+                <br>
+                <input type="text" id="var_b" value="0"><br>
+                <br>
+                resultado= <input type="text" id="var_c" value="0"><br>
+                <br>
+                <button type="button" class="buton" onclick="equacao()">calcular</button>
             </form>
         </div>
     </main>
