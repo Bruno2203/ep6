@@ -54,14 +54,14 @@ function funcao_resposta(){
             contador = contador + 1;
         }
         else{
-            document.getElementById("resp_errada_1").innerHTML = "Errada, A velocidade média é calculada dividindo o deslocamento pela variação de tempo. Neste caso.";
+            document.getElementById("resp_errada_1").innerHTML = "Errada, A velocidade média é calculada dividindo o deslocamento pela variação de tempo.";
         }
         if(resp2.value == "correta"){
             document.getElementById("resp_correta_2").innerHTML = "Correta!";
             contador = contador + 1;
         }
         else{
-            document.getElementById("resp_errada_2").innerHTML = "Errada,  A velocidade média é calculada dividindo o deslocamento pela variação de tempo. Neste caso.";
+            document.getElementById("resp_errada_2").innerHTML = "Errada,  A velocidade média é calculada dividindo o deslocamento pela variação de tempo.";
 
         }
         if(resp3.value == "correta"){
@@ -69,7 +69,7 @@ function funcao_resposta(){
             contador = contador + 1;
         }
         else{
-            document.getElementById("resp_errada_3").innerHTML = "Errada,  A velocidade média é calculada dividindo o deslocamento pela variação de tempo. Neste caso.";
+            document.getElementById("resp_errada_3").innerHTML = "Errada,  A velocidade média é calculada dividindo o deslocamento pela variação de tempo.";
 
         }
         if(resp4.value == "correta"){
@@ -77,7 +77,7 @@ function funcao_resposta(){
             contador = contador + 1;
         }
         else{
-            document.getElementById("resp_errada_4").innerHTML = "Errada,  A velocidade média é calculada dividindo o deslocamento pela variação de tempo. Neste caso.";
+            document.getElementById("resp_errada_4").innerHTML = "Errada,  A velocidade média é calculada dividindo o deslocamento pela variação de tempo.";
 
         }
         if(resp5.value == "correta"){
@@ -85,7 +85,7 @@ function funcao_resposta(){
             contador = contador + 1;
         }
         else{
-            document.getElementById("resp_errada_5").innerHTML = "Errada,  A velocidade média é calculada dividindo o deslocamento pela variação de tempo. Neste caso.";
+            document.getElementById("resp_errada_5").innerHTML = "Errada,  A velocidade média é calculada dividindo o deslocamento pela variação de tempo.";
 
         }
         if(resp6.value == "correta"){
@@ -93,7 +93,7 @@ function funcao_resposta(){
             contador = contador + 1;
         }
         else{
-            document.getElementById("resp_errada_6").innerHTML = "Errada,  A velocidade média é calculada dividindo o deslocamento pela variação de tempo. Neste caso.";
+            document.getElementById("resp_errada_6").innerHTML = "Errada,  A velocidade média é calculada dividindo o deslocamento pela variação de tempo.";
 
         }
         if(resp7.value == "correta"){
@@ -101,7 +101,7 @@ function funcao_resposta(){
             contador = contador + 1;
         }
         else{
-            document.getElementById("resp_errada_7").innerHTML = "Errada,  A velocidade média é calculada dividindo o deslocamento pela variação de tempo. Neste caso";
+            document.getElementById("resp_errada_7").innerHTML = "Errada,  A velocidade média é calculada dividindo o deslocamento pela variação de tempo.";
 
         }
         if(resp8.value == "correta"){
@@ -109,7 +109,7 @@ function funcao_resposta(){
             contador = contador + 1;
         }
         else{
-            document.getElementById("resp_errada_8").innerHTML = "Errada,  A velocidade média é calculada dividindo o deslocamento pela variação de tempo. Neste caso";
+            document.getElementById("resp_errada_8").innerHTML = "Errada,  A velocidade média é calculada dividindo o deslocamento pela variação de tempo.";
 
         }
         if(resp9.value == "correta"){
@@ -117,14 +117,14 @@ function funcao_resposta(){
             contador = contador + 1;
         }
         else{
-            document.getElementById("resp_errada_9").innerHTML = "Errada,  A velocidade média é calculada dividindo o deslocamento pela variação de tempo. Neste caso.";
+            document.getElementById("resp_errada_9").innerHTML = "Errada,  A velocidade média é calculada dividindo o deslocamento pela variação de tempo.";
         }
         if(resp10.value == "correta"){
             document.getElementById("resp_correta_10").innerHTML = "Correta!";
             contador = contador + 1;
         }
         else{
-            document.getElementById("resp_errada_10").innerHTML = "Errada,  A velocidade média é calculada dividindo o deslocamento pela variação de tempo. Neste caso";
+            document.getElementById("resp_errada_10").innerHTML = "Errada,  A velocidade média é calculada dividindo o deslocamento pela variação de tempo.";
 
         }
         document.getElementById("quantos_acertos").innerHTML = "Você acertou " + contador + " questões!";
@@ -134,9 +134,3 @@ function funcao_resposta(){
     }
 
 }
-    
-
-
-
-
-
