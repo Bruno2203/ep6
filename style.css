@@ -20,15 +20,14 @@ body{
 /*muda a decoraçao das letras dos subtitulos*/
 .under {
     text-decoration: underline;
-  }  
+}  
   .under2 {
     text-decoration: underline;
     text-align: center;
-  }  
+}  
 /*coloca a acor braco como fundo da frase*/
 .fundofrase{
     background-color: white;
-
 }
 /*muda a altura do height*/
 .cabe{
@@ -41,6 +40,9 @@ body{
     position: absolute;
     top: 10px;
     left: 100px;
+}
+.meio{
+    grid-area: meio;
 }
 /*posiciona a logo*/
 .logo{
@@ -72,6 +74,9 @@ body{
 /*coloca no centro*/
 .centraliza{
     text-align: center;
+}
+.roda{
+    grid-area: roda;
 }
 /*configura design do fundo do main*/
 .partefundo{
@@ -211,16 +216,7 @@ body{
     color: green;
 }
 .vermelho{
-    color: rgb(255, 0, 0);
-}
-.acerto{
-    color: green;
-}
-.erro{
     color: red;
-}
-.deitar{
-    display: flex;
 }
 /*responsividade*/
 @media only screen and   (max-width: 768px) {
@@ -233,11 +229,6 @@ body{
         "meio meio"
         "roda roda";
     }
-    .name{
-        position: relative;
-        left: 50%;
-        top: -80px;
-    }
     .centro_2{
         margin-top: 10px;
         margin-left: 50px;
@@ -246,7 +237,6 @@ body{
         border-radius: 15px;
         word-break: normal;
         font-family: Arial, Helvetica, sans-serif;
-        padding-left: 0;
         padding: 30px;
         background-color: rgb(156, 148, 148);
     }
@@ -257,7 +247,6 @@ body{
     }
     .meio{
         grid-area: meio;
-
     }
 
 }
@@ -271,11 +260,6 @@ body{
         "meio meio"
         "roda roda";
     }
-    .name{
-        position: relative;
-        left: 45%;
-        top: -80px;
-    }
     .centro_2{
         margin-top: 10px;
         margin-left: 50px;
@@ -284,7 +268,6 @@ body{
         border-radius: 15px;
         word-break: normal;
         font-family: Arial, Helvetica, sans-serif;
-        padding-left: 150px;
         padding: 30px;
         background-color: rgb(156, 148, 148);
     }

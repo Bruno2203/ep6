@@ -12,10 +12,10 @@ function equacao(){
     else
     {
         if(c == resposta){
-            document.getElementById("acerto").innerHTML = "Acerto";     
+            alert("acertou");
         }
         else{
-            document.getElementById("erro").innerHTML = "Erro, pois os numeros divididos nao batem de acordo com o valor" 
+            alert("errou");
         }
     }
 }
