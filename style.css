@@ -110,6 +110,11 @@ body{
     width: 100px;
     border-radius: 5px;
 }
+.formula{
+    justify-content: center;
+    position: relative;
+    left: 43%;
+}
 /*designer do foother*/
 .footer-diagonal {
     width: 100%;
