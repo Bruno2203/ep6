@@ -3,7 +3,25 @@ function equacao(){
     var a = var_a.value;
     var b = var_b.value;
     var c = var_c.value;
-
+    var resposta = a/b;
+    if(a == 0){
+        alert("A deve ser diferente de 0");
+    }
+        
+    else
+    {
+        if(c == resposta){
+            alert("acertou");
+        }
+        else{
+            alert("errou");
+        }
+    }
+}
+function equacao2(){
+    var a = vara.value;
+    var b = varb.value;
+    var c = varc.value;
     var resposta = a/b;
     if(a == 0){
         alert("A deve ser diferente de 0");
