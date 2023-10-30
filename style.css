@@ -57,6 +57,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     padding: 20px;
     background-color: rgb(156, 148, 148);
+    font-size: 20px;
 }
 /*configura design no centro do main*/
 .centro_2{
@@ -84,7 +85,7 @@ body{
     text-align: center;
     height: 55vh;
     position: relative;
-    top: 200px;
+    top: 150px;
 }
 /*design de button*/
 .butao{
@@ -97,7 +98,7 @@ body{
 }
 /*designer para botao de entrar nos exercicios*/
 .enter{
-    background-image: url(img/fundo.jpg);
+    background-image: url(img/fundo-PhotoRoom.jpg);
     padding: 0;
     margin: 0;
 }
@@ -109,11 +110,6 @@ body{
     height: 45px;
     width: 100px;
     border-radius: 5px;
-}
-.formula{
-    justify-content: center;
-    position: relative;
-    left: 43%;
 }
 /*designer do foother*/
 .footer-diagonal {
@@ -224,6 +220,7 @@ body{
     color: red;
 }
 /*responsividade*/
+
 @media only screen and   (max-width: 768px) {
     body{
         grid-gap: 20px; ;
@@ -245,6 +242,10 @@ body{
         padding: 30px;
         background-color: rgb(156, 148, 148);
     }
+    .meio{
+        grid-area: meio;
+        padding: 0;
+    }
     .enter{
         background-color: rgb(48, 47, 47);
         padding: 0;
@@ -264,6 +265,7 @@ body{
         "cabe cabe"
         "meio meio"
         "roda roda";
+        font-size: 25px;
     }
     .centro_2{
         margin-top: 10px;
@@ -278,11 +280,19 @@ body{
     }
     .meio{
         grid-area: meio;
-
+        padding-left: 100px;
+        padding-right: 100px;
     }
 
 }
-
+@media only screen and   (max-width: 368px) {
+    .centro{
+        font-size: 32px;
+    }
+    .centro_2{
+        font-size: 32px;
+    }
+}
 
 
 
